@@ -12,10 +12,11 @@
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours;
-            document.getElementById('minutes').textContent = minutes;
-            document.getElementById('seconds').textContent = seconds;
+            document.getElementById('days').textContent = 377;
+            document.getElementById('hours').textContent = 03;
+            document.getElementById('minutes').textContent = 09;
+            document.getElementById('seconds').textContent = 0;
+
         }
 
         // Update counter every second
@@ -58,5 +59,6 @@
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
+
 
         
